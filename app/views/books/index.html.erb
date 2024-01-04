@@ -14,11 +14,11 @@
    <td>
     <% link_to "Show", book_path(book.id) %>
    </td>
-   
+
    <td>
     <% link_to "Edit", edit_book_path(book.id) %>
    </td>
-   
+
    <td>
     <% link_to "Destroy", book_path(book.id) %> method: :delete, "dete-comfirm" => "Are you sure?" %>
    </td>
@@ -39,13 +39,13 @@
  <div class="field">
   <label for ="book_title">Title</label>
   <%= f.text_field :title %>
- </div> 
- 
+ </div>
+
  <div class="field">
  <label for ="book_body">Body</label>
   <%= f.text_area :body %>
  </div>
- 
+
  <div class="actions">
   <%= f.submit "Create Book" %>
  </div>
