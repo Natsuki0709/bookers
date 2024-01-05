@@ -7,7 +7,7 @@
    </tr>
  </thead>
 <tbody>
-  <<%= @books.each do |book| %>
+  <%= @books.each do |book| %>
   <tr>
    <td><%= book.title %></td>
    <td><%= book.body %></td>
@@ -20,7 +20,7 @@
    </td>
 
    <td>
-    <% link_to "Destroy", book_path(book.id) %> method: :delete, "dete-comfirm" => "Are you sure?" %>
+    <% link_to "Destroy", book_path(book.id), method: :delete, "dete-comfirm" => "Are you sure?" %>
    </td>
   </tr>
 <% end %>
@@ -35,9 +35,12 @@
   <li><%= message%></li>
  </ul>
 <% end %>
+<% end %>
  <%= form_with model: Book do |f| %>
  <div class="field">
   <label for ="book_title">Title</label>
+
+ようつべ
   <%= f.text_field :title %>
  </div>
 
